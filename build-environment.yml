@@ -1,0 +1,11 @@
+name: jlite-build
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - jupyter_server
+  - jupyterlite-core
+  - jupyterlite-xeus
+  - jupyterlite-pyodide-kernel
+  - jupyterlite-terminal
+  - nodejs=20
