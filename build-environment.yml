@@ -2,7 +2,7 @@ name: jlite-build
 channels:
   - conda-forge
 dependencies:
-  - python
+  - python=3.12
   - jupyter_server
   - jupyterlite-core
   - jupyterlite-xeus
