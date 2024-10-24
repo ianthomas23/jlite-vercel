@@ -1,2 +1,5 @@
 dist/
 .jupyterlite.doit.db
+cockle_wasm_env/
+node_modules/
+cockle-config.json

@@ -12,5 +12,8 @@ export PATH=$PATH:~/path0/bin
 micromamba create -f build-environment.yml -y
 micromamba activate jlite-build
 
+# Temporary fix so can obtain required wasm packages.
+npm install --no-save @jupyterlite/cockle
+
 jupyter lite --version
 jupyter lite build --contents contents --output-dir dist --debug
