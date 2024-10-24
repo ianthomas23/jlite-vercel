@@ -4,10 +4,14 @@ yum install wget -y
 
 wget -qO- https://micromamba.snakepit.net/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
 
-./bin/micromamba shell init -s bash -p ~/micromamba
-source ~/.bashrc
-ls -l ~/path0/bin
-export PATH=$PATH:~/path0/bin
+export PATH="$PWD/bin:$PATH"
+export MAMBA_ROOT_PREFIX="$PWD/micromamba"
+
+# Initialize Micromamba shell
+./bin/micromamba shell init -s bash --no-modify-profile -p $MAMBA_ROOT_PREFIX
+
+# Source Micromamba environment directly
+eval "$(./bin/micromamba shell hook -s bash)"
 
 micromamba create -f build-environment.yml -y
 micromamba activate jlite-build
