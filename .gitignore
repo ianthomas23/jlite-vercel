@@ -3,3 +3,4 @@ dist/
 cockle_wasm_env/
 node_modules/
 cockle-config.json
+.cockle_temp/
