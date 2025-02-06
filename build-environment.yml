@@ -6,5 +6,5 @@ dependencies:
   - jupyterlite-core
   - jupyterlite-xeus
   - jupyterlite-pyodide-kernel
-  - jupyterlite-terminal
+  - jupyterlite-terminal>=0.1.5
   - nodejs=20
