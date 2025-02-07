@@ -8,6 +8,7 @@ export PATH="$PWD/bin:$PATH"
 export MAMBA_ROOT_PREFIX="$PWD/micromamba"
 
 # Initialize Micromamba shell
+rm -rf $MAMBA_ROOT_PREFIX
 ./bin/micromamba shell init -s bash --no-modify-profile -p $MAMBA_ROOT_PREFIX
 
 # Source Micromamba environment directly
