@@ -4,7 +4,7 @@ channels:
 dependencies:
   - nodejs=20
   - jupyter_server
-  - jupyterlite-terminal
+  - jupyterlite-terminal>=1.4.0
   - jupyterlite-core
   - jupyterlite-xeus
   - jupyterlite-pyodide-kernel
