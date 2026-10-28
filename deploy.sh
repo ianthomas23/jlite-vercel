@@ -2,7 +2,7 @@
 
 yum install wget -y
 
-wget -qO- https://micromamba.snakepit.net/api/micromamba/linux-64/2.0.5 | tar -xvj bin/micromamba
+wget -qO- https://micro.mamba.pm/api/micromamba/linux-64/2.10.0 | tar -xvj bin/micromamba
 
 export PATH="$PWD/bin:$PATH"
 export MAMBA_ROOT_PREFIX="$PWD/micromamba"
